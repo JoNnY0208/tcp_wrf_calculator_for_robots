@@ -305,7 +305,7 @@ photo = ImageTk.PhotoImage(image)
 labellogo = tk.Label(image=photo)
 labellogo.grid(row=0, column=0,padx=10, pady=10)
 
-text_label = tk.Label(root, text="TCP / WRF Calculator - Designed and made by Modular Automation 2023")
+text_label = tk.Label(root, text="TCP / WRF Calculator - Designed and made by Jonatan Dejko 2023")
 text_label.grid(row=0, column=1, columnspan=15)
 
 ### Pose 1 Inputs

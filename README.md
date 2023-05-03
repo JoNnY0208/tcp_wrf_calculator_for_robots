@@ -67,3 +67,33 @@ Section for WRF Calculations – marked green and with numbers [4], [5], [6]
 2. Come back to the robot configuration software/interface and enter the received values.
 
 ![TCP Result](images/img5.png "TCP Result")
+
+# WRF Calculations
+
+1. Using manual control of a robot get 3 different positions.
+**Note:** Make sure the positions are not too close to each other. 
+
+2. Populate values for X, Y, Z, RX, RY, RZ for all 3 positions [1].
+**Note:** Make sure all the positions and values are populated, if necessary, insert 0 but do not leave any input field empty.
+​​​​​​​
+3. If input field/fields [1] is/are empty an error message will be displayed [2] “No value calculated for … Please enter valid numbers!".
+
+![WRF Calculations - No all data entered](images/img6.png "WRF Calculations - No all data entered")
+
+---
+
+1. Confirm all input fields are populated [1].
+​​​​​​​
+2. Select “Calculate WRF” button [2] to begin calculations.
+
+![Trigger WRF calculations](images/img7.png "Trigger WRF calculations")
+
+---
+
+1. Check the result in X, Y, Z format on [1].
+​​​​​​​
+2. Come back to the robot configuration software/interface and enter the received values.
+
+![WRF Results](images/img8.png "WRF Results")
+
+

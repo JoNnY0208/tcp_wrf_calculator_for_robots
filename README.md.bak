@@ -1,32 +1,53 @@
-# HMI Application Removal Tool
+# About
 
-Copy application to the desktop of a PC where you have HMI application that you want to remove.
-Run application as Administrator 
+Tool to allow engineers to easily calculate TCP and WRF for robots which this standard feature is not avaiable. The following tool can be used on the HMI application or stand alone. 
 
-![img1](img/img1)
+**NOTE:** Meca are not mechanical calibrated robots. The TCP and WRF could differ from the calculated coordinates acquired using this application to the current robot mechanical TCP position.
+
+# Application requirement
+
+The minimal requirement to run the exe file:
+
+- Windows 10
+
+# Opening Application
+
+Open explorer and find a file called: "TCP_WRF_Calculator_v*.*.*" (note that the version may vary) marked as [1].
+
+![Opening the exe file on a windows machine](images/img1.png "Opening the exe file on a windows machine")
+
+# Application Overview
  
-If application will not have admin right all the functions will be disabled and you will get worning. The application would have to be closed and started again
+Application contains two main sections:
 
-![img2](img/img2)
+**A section highlighted in red**
+Section for TCP Calculations – marked red and with numbers [1], [2], [3]
 
-On the application main screen you have few options:
+​​​​​​​**B section highlighted in green**
+Section for WRF Calculations – marked green and with numbers [4], [5], [6]
 
-![img3](img/img3)
+![TCP / WRF Calculator Overview](images/img2.png "TCP / WRF Calculator Overview")
 
-1.	Disable Rockwell Services
-2.	Open HMI Project Location
-3.	Enable Rockwell Services
-4.	Help
-5.	Exit
- 
-To remove HMI application you have to type (1) and hit enter – this will disable all Rockwell Services
-The system will be reboted – if not – rebot system manualy.
-After the reboot login to the system and run the Tool again (with Admin Rights)
-Now Select option (2) and hit enter. This will open „File Explorer” with Rockwell HMI Project path already opened.
-Manualy delete the application file that you want to remove. Application_Name.RnaD
-Come back to HMI Application Remover and click any key. This will re enable all the Rockwell Services.
-The system will be reboted – if not – rebot system manualy.
-After the reboot login to the system and use Rockwells Application Manager to restore backup of a new HMI application
+[1] Input fields for all positions used in TCP calculations. **Note:** all the fields need to be populated to perform calculations.
 
-![img4](img/img4)
- 
+[2] Output text fields – displays the current status of TCP calculations. Text is changed if: no calculations performed yet, the error occurs, or calculations are completed successfully.
+
+[3] Button used to trigger calculations for TCP.
+
+[4] Input fields for all positions used in WRF calculations. **Note:** all the fields need to be populated to perform calculations.
+
+[5] Output text fields – displays the current status of WRF calculations. Text is changed if: no calculations performed yet, the error occurs, or calculations are completed successfully.
+
+[6] Button used to trigger calculations for WRF.
+
+# TCP Calculations
+
+1. Using manual control of a robot get 10 different positions.
+**Note:** Make sure the positions are not too close to each other. 
+
+2. Populate values for X, Y, Z, RX, RY, RZ for all 10 positions [1].
+**Note:** Make sure all the positions and values are populated, if necessary, insert 0 but do not leave any input field empty.
+
+3. If input field/fields [1] is/are empty an error message will be displayed [2] “No value calculated for … Please enter valid numbers!".
+
+![TCP Calculations - No all data entered](images/img3.png "TCP Calculations - No all data entered")
